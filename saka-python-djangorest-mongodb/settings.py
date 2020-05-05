@@ -113,9 +113,9 @@ AUTH_PASSWORD_VALIDATORS = [
     },
 ]
 
-import django_heroku
-# Activate Django-Heroku.
-django_heroku.settings(locals())
+# import django_heroku
+# # Activate Django-Heroku.
+# django_heroku.settings(locals())
 
 
 # Internationalization

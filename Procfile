@@ -1,1 +1,1 @@
-python manage.py runserver
+web: gunicorn saka-python-djangorest-mongodb.wsgi
