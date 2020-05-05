@@ -1,7 +1,7 @@
 drf_yasg
-django
-djongo
+django==2.0
+djongo==1.3.2
 django-heroku
 dnspython
-djangorestframework
+djangorestframework==3.11.0
 sqlparse
