@@ -1,3 +1,1 @@
-python manage.py makemigrations
-python manage.py migrate
-web: gunicorn saka-python-djangorest-mongodb.wsgi
+python manage.py runserver
