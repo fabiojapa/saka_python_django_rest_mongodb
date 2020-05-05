@@ -25,7 +25,9 @@ SECRET_KEY = 'gzy9a+)4ww94pmktw--xo623girku19(vj#4iv7ud=8dmn5c9&'
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
 
-ALLOWED_HOSTS = []
+ALLOWED_HOSTS = [
+    'saka-python-djangorest-mongodb.herokuapp.com'
+]
 
 
 # Application definition
