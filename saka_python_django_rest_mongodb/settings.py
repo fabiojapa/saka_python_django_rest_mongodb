@@ -83,9 +83,9 @@ DATABASES = {
         'ENGINE' : 'djongo',
         'NAME' : 'test',
         'CLIENT': {
-            'host': 'mongodb+srv://appuser:sAbweK71bPwiaZww@googlesp-4dth2.gcp.mongodb.net/test?retryWrites=true',
-            'username': 'appuser',
-            'password': 'sAbweK71bPwiaZww',
+            'host': os.environ['MONGODB_URI'],
+            'username': os.environ['MONGODB_USER'],
+            'password': os.environ['MONGODB_PASSWORD'],
         }
    }
 }
