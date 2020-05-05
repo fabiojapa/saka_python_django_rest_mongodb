@@ -1,1 +1,1 @@
-web: gunicorn saka-python-djangorest-mongodb.wsgi
+web: gunicorn saka_python_django_rest_mongodb.wsgi
