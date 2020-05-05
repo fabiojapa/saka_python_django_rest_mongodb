@@ -75,7 +75,6 @@ WSGI_APPLICATION = 'saka_python_django_rest_mongodb.wsgi.application'
 
 # Database
 # https://docs.djangoproject.com/en/3.0/ref/settings/#databases
-import os
 
 DATABASES = {
     'default' : {
@@ -127,6 +126,10 @@ USE_I18N = True
 USE_L10N = True
 
 USE_TZ = True
+
+import django_heroku
+# Activate Django-Heroku.
+django_heroku.settings(locals())
 
 
 # Static files (CSS, JavaScript, Images)

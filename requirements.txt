@@ -5,3 +5,4 @@ django-heroku
 dnspython
 djangorestframework==3.11.0
 sqlparse
+gunicorn
