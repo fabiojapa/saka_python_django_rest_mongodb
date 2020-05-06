@@ -2,22 +2,27 @@
     apiVersion: extensions/v1beta1
     kind: Deployment
     metadata:
-      name: pet-deployment
+      name: music-deployment
       labels:
-        app: pet
+        app: music
     spec:
       replicas: 1
       template:
         metadata:
           labels:
-            app: pet
+            app: music
         spec:
           containers:
-          - name: pet
-            image: fabiojapa/pet-service-register
+          - name: music
+            image: fabiojapa/saka_python_django_rest_mongodb
             imagePullPolicy: Always 
             ports:
-              - containerPort: 3000
+              - containerPort: 8000
             env:
-              - name: MONGODB_URI 
+              - name: MONGODB_URI
                 value: "mongodb+srv://appuser:sAbweK71bPwiaZww@googlesp-4dth2.gcp.mongodb.net/test?retryWrites=true&w=majority"
+              - name: MONGODB_USER
+                value: "appuser"
+              - name: MONGODB_PASSWORD
+                value: "sAbweK71bPwiaZww"
+                
