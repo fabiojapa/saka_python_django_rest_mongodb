@@ -1,5 +1,5 @@
 drf_yasg
-django==2.2
+django==2.2.10
 djongo==1.3.2
 django-heroku
 dnspython
