@@ -75,8 +75,6 @@ WSGI_APPLICATION = 'saka_python_django_rest_mongodb.wsgi.application'
 
 # Database
 # https://docs.djangoproject.com/en/3.0/ref/settings/#databases
-import os
-print(os.environ['HOME'])
 
 DATABASES = {
     'default' : {

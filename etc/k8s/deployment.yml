@@ -1,0 +1,23 @@
+---
+    apiVersion: extensions/v1beta1
+    kind: Deployment
+    metadata:
+      name: pet-deployment
+      labels:
+        app: pet
+    spec:
+      replicas: 1
+      template:
+        metadata:
+          labels:
+            app: pet
+        spec:
+          containers:
+          - name: pet
+            image: fabiojapa/pet-service-register
+            imagePullPolicy: Always 
+            ports:
+              - containerPort: 3000
+            env:
+              - name: MONGODB_URI 
+                value: "mongodb+srv://appuser:sAbweK71bPwiaZww@googlesp-4dth2.gcp.mongodb.net/test?retryWrites=true&w=majority"
