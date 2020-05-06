@@ -114,3 +114,6 @@ GitHub.sublime-settings
 !.vscode/launch.json 
 !.vscode/extensions.json 
 .history
+
+config_vars.sh
+./config_vars.sh
