@@ -5,7 +5,7 @@ COPY ./saka_python_django_rest_mongodb ./saka_python_django_rest_mongodb
 COPY ./*.py ./
 
 RUN pip install drf_yasg \
-    djongo django==2.2 sqlparse==0.2.4 \
+    djongo django==2.2.10 sqlparse==0.2.4 \
     djangorestframework dnspython
 
 EXPOSE 8000
