@@ -1,12 +1,10 @@
 FROM python:3-alpine
+ENV PYTHONUNBUFFERED 1
 
-COPY ./myapp ./myapp
-COPY ./saka_python_django_rest_mongodb ./saka_python_django_rest_mongodb
-COPY ./*.py ./
-
-RUN pip install drf_yasg \
-    djongo django==2.2.10 sqlparse==0.2.4 \
-    djangorestframework dnspython
+RUN mkdir /code
+WORKDIR /code
+COPY . /code/
+RUN pip install -r requirements.txt
 
 EXPOSE 8000
 
