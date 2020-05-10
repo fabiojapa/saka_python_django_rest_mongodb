@@ -1,1 +1,1 @@
-web: gunicorn saka_python_django_rest_mongodb.wsgi
+ python3 manage.py runserver
